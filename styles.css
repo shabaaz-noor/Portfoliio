@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+box-sizing: border-box;
+}
+.logo{
+  width: 100px; height: 40px;
+  border-radius: 15px;
+
+}
+.container-fluid{
+  text-align: center;
+text-transform: capitalize;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+.love-png{
+  width: 40px;
+  height: 40px;
+  transition-property: width, height;
+  transition-duration: 2s;
+}
+.love-png:hover{
+  width: 70px;
+  height: 70px;
+}
+.header{
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3)), url('../images/bg3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0);
+  position: relative;
+}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+li{
+  list-style: none;
+}
+p{
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: grey;
+}
+footer p{
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: white;
+}
+.lead{
+  color: #606060;
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 6px #000;
+}
+.jumbotron{
+   background-image: linear-gradient(to bottom, white, skyblue, white);
+   padding: 2rem;
+   border-radius: 0;
+}
+ .extra-div h2{
+  font-size: 0.9rem;
+  margin: 20px 0 15px 0;
+  font-weight: bold;
+  line-height: 1.1;
+  word-spacing: 4px;
+}
+.header:before{
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+opacity: .4;
+z-index: -1;
+  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%)
+}
+.navbar::before{
+  content: "";
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+opacity: .4;
+z-index: -1;
+  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%)
+}
+.nav-item a{
+  color: #fff!important;
+  font-weight: bold;
+}
+.header-section{
+  width: 100%;
+  height: inherit;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.center-div{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.header-button a{
+   border: 1px solid #fff;
+   border-radius: 100px;
+   margin: 0 5px;
+   padding: 12px 35px;
+   outline: none;
+   color: #fff;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.4;
+   text-align: center;
+}
+ .header-button a:hover{
+  color: #50d1c0;
+  background-color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+ .header-2 extra-div{
+  width: 100%;
+  height: auto;
+  margin: auto;
+
+}
+.extra-div{
+  background: #fff;
+  border: medium none;
+  padding: 50px!important;
+  border-radius: 3px;
+  transition: 0.3s
+}
+.extra-div:hover {
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+transform:translateY(-20px)
+}
+.servicediv{
+  background: #fff;
+  padding: 60px 0;
+  margin-bottom: 30px;
+}
+#fixed {
+  background-image: url("bgfixed.jpeg");
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card{
+  box-shadow: 4px 4px 6px grey;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.headings{
+  margin-bottom: 50px;
+}
+.headings h1{
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.headings h2{
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.names h1{
+  font-size: 0.9rem;
+  color: #2e2e2e;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.serviceicon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-fluid{
+  border-radius: 70%;
+  height: 350px;
+  width: 350px;
+}
+.fa-hand-rock{
+color: red;
+}
+.fa-car{
+color: blue;
+}
+.fa-swimmer{
+  color: skyblue;
+}
+.fa-hand-rock, .fa-car, .fa-swimmer{
+  font-size: 4em;
+  margin:1rem;
+}
+.social a{
+  font-size: 3.5em;
+  padding: 3rem;
+}
+.fa-facebook{
+color: #3b5998;
+}
+.fa-google-plus-g{
+  color: #dd4b39;
+}
+.fa-instagram{
+  color: #517fa4;
+}
+.fa-facebook:hover,
+.fa-google-plus-g:hover,
+.fa-instagram:hover,
+.fa-twitter:hover {
+  color:#d5d5d5;
+}
+footer{
+  background-color: #3f3f3f;
+    color: #d5d5d5;
+      padding: 2rem;
+}
+
+hr.light{
+  border-top: 1px solid #d5d5d5;
+  width:100%;
+  margin-top: .8rem;
+}
